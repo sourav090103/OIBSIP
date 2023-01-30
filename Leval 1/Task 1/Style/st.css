@@ -1,0 +1,119 @@
+*{
+	padding: 0; 
+	margin: 0; 
+	box-sizing: 
+	border-box;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background-color: aliceblue;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	width: 100%;
+	height: 180px;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 80px;
+}
+
+.logo{
+	border: 3px solid #ee5253;
+	color: #ee5253;
+	border-radius: 8px;
+	font-size: 2.5rem;
+	padding: 0 10px;
+}
+.menu a{
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px;
+	font-family: monospace;
+	font-size: 20px;
+}
+.menu a:first-child{
+	color: #ee5253;
+}
+.menu a:hover{
+color: #ee5253;	
+}
+.search label{
+	position: relative;
+}
+.search label input{
+	width: 70%;
+	padding: 5px;
+	outline: none;
+	border: none;
+	border-radius: 10px 0 0 10px;
+}
+.search label button{
+	position: absolute;
+	padding: 5px;
+	border: none;
+	outline: none;
+	background:#ee5253;
+	color: white;
+	border-radius: 0 8px 8px 0;
+	cursor: pointer;
+}
+.search label button:hover{
+	background: black;
+	color: white;
+}
+.icons{
+	width: 100%;
+	height: 60%;
+		position: relative;
+}
+.icons img{
+	position: absolute;
+	animation: animate 3s linear infinite;
+}
+@keyframes animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+#a{  left: 15%;}
+#b{  right: 5%;}
+#c{  left: 15%;  bottom: 0;}
+#d{  right: 5%;    bottom: 0;}
+
+.htext{
+	position: absolute;
+	left: 5%;
+	top: 40%;
+	max-width: 600px;
+}
+.htext h1{
+	font-family: cursive;
+	font-size: 3em;
+	margin: 15px 0;
+}
+.htext p{
+	color: grey;
+	font-size: 20px;
+	font-family: monospace;
+	line-height: 2rem;
+}
+
+.htext a{
+	text-decoration: none;
+	color: white;
+	background:#ee5253;	
+	padding: 10px 20px;
+	border-radius: 8px;
+}
+.htext a:hover{
+	background: black;
+	color: white;
+}
